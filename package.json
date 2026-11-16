@@ -1,0 +1,24 @@
+{
+  "name": "cu-alumni-connect",
+  "version": "2.0.0",
+  "description": "University of Calcutta Alumni Network – server edition with shared data, accounts and backups",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "backup": "node scripts/cli.js backup",
+    "restore": "node scripts/cli.js restore",
+    "reset-password": "node scripts/cli.js reset-password"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "socket.io": "^4.8.1"
+  },
+  "optionalDependencies": {
+    "pg": "^8.16.0"
+  }
+}
