@@ -1,0 +1,18 @@
+{
+  "name": "cu-alumni-connect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CU Alumni Connect: University of Calcutta alumni portal and staff console, with API, real-time chat and SQLite storage.",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "multer": "^2.5.0",
+    "socket.io": "^4.8.4"
+  }
+}
